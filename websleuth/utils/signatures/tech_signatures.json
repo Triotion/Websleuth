@@ -1,0 +1,152 @@
+{
+    "cms": {
+        "WordPress": {
+            "html": ["wp-content", "wp-includes", "wp-admin"],
+            "headers": {"X-Powered-By": "WordPress"}
+        },
+        "Joomla": {
+            "html": ["/components/com_", "joomla", "Joomla!"],
+            "headers": {}
+        },
+        "Drupal": {
+            "html": ["Drupal.settings", "drupal.org", "/sites/all/themes/", "/sites/all/modules/"],
+            "headers": {"X-Generator": "Drupal"}
+        },
+        "Shopify": {
+            "html": ["cdn.shopify.com", "shopify.com", "Shopify.theme"],
+            "headers": {}
+        },
+        "Magento": {
+            "html": ["Mage.Cookies", "Magento", "var BLANK_URL"],
+            "headers": {}
+        },
+        "Ghost": {
+            "html": ["ghost.io", "content=\"Ghost", "ghost-url"],
+            "headers": {}
+        },
+        "Wix": {
+            "html": ["wix.com", "X-Wix-", "wixBiSession"],
+            "headers": {}
+        },
+        "Squarespace": {
+            "html": ["squarespace.com", "static.squarespace.com"],
+            "headers": {"Server": "Squarespace"}
+        }
+    },
+    "frameworks": {
+        "React": {"html": ["react.js", "react-dom.js", "reactjs", "_reactRootContainer"]},
+        "Angular": {"html": ["ng-app", "angular.js", "angular/", "ng-controller", "ng-model"]},
+        "Vue.js": {"html": ["vue.js", "vuejs", "__vue__"]},
+        "Django": {"html": ["csrfmiddlewaretoken", "__django", "django-admin"]},
+        "Laravel": {"html": ["laravel", "csrf-token", "Illuminate\\"]},
+        "ASP.NET": {
+            "html": ["__VIEWSTATE", "__ASPNETVERSION", "__RequestVerificationToken"],
+            "headers": {"X-AspNet-Version": "", "X-Powered-By": "ASP.NET"}
+        },
+        "Ruby on Rails": {
+            "html": ["rails", "data-turbolinks-track", "/assets/"],
+            "headers": {"X-Powered-By": "Ruby on Rails"}
+        },
+        "Express.js": {
+            "headers": {"X-Powered-By": "Express"}
+        },
+        "Flask": {
+            "headers": {"Server": "Werkzeug"}
+        },
+        "Spring": {
+            "html": ["org.springframework", "spring.io"],
+            "headers": {}
+        },
+        "Next.js": {
+            "html": ["__NEXT_DATA__", "next/dist", "next-route"]
+        },
+        "Gatsby": {
+            "html": ["___gatsby", "gatsby-image", "/page-data/"]
+        },
+        "Nuxt.js": {
+            "html": ["__NUXT__", "__nuxt"]
+        }
+    },
+    "servers": {
+        "Apache": {"headers": {"Server": "Apache"}},
+        "Nginx": {"headers": {"Server": "nginx"}},
+        "Microsoft-IIS": {"headers": {"Server": "Microsoft-IIS"}},
+        "LiteSpeed": {"headers": {"Server": "LiteSpeed"}},
+        "Cloudflare": {"headers": {"Server": "cloudflare", "CF-RAY": ""}},
+        "Tomcat": {"headers": {"Server": "Apache-Coyote", "X-Powered-By": "Tomcat"}},
+        "Node.js": {"headers": {"X-Powered-By": "Node.js"}},
+        "Caddy": {"headers": {"Server": "Caddy"}},
+        "Gunicorn": {"headers": {"Server": "gunicorn"}},
+        "Lighttpd": {"headers": {"Server": "lighttpd"}},
+        "Jetty": {"headers": {"Server": "Jetty"}},
+        "Undertow": {"headers": {"Server": "undertow"}},
+        "Cowboy": {"headers": {"Server": "Cowboy"}}
+    },
+    "languages": {
+        "PHP": {"headers": {"X-Powered-By": "PHP"}},
+        "ASP.NET": {"headers": {"X-Powered-By": "ASP.NET"}},
+        "Java": {"headers": {"X-Powered-By": "JSP"}},
+        "Node.js": {"headers": {"X-Powered-By": "Node.js"}},
+        "Python": {"headers": {"X-Powered-By": "Python"}}
+    },
+    "javascript_libraries": {
+        "jQuery": {"html": ["jquery", "jquery.min.js", "jQuery"]},
+        "Bootstrap": {"html": ["bootstrap.min.js", "bootstrap.css", "bootstrap.min.css"]},
+        "Lodash": {"html": ["lodash.min.js", "lodash.js", "_"]},
+        "Moment.js": {"html": ["moment.js", "moment.min.js"]},
+        "Underscore.js": {"html": ["underscore.js", "underscore-min.js"]},
+        "D3.js": {"html": ["d3.js", "d3.min.js"]},
+        "React": {"html": ["react.js", "react.min.js", "React"]},
+        "Angular": {"html": ["angular.js", "angular.min.js", "Angular"]},
+        "Vue.js": {"html": ["vue.js", "vue.min.js", "Vue"]},
+        "Axios": {"html": ["axios.min.js", "axios.js"]},
+        "Backbone.js": {"html": ["backbone.js", "backbone-min.js"]},
+        "Ember.js": {"html": ["ember.js", "ember.min.js"]},
+        "Three.js": {"html": ["three.js", "three.min.js"]},
+        "Socket.io": {"html": ["socket.io", "socket.io.js"]},
+        "Chart.js": {"html": ["chart.js", "Chart.js"]},
+        "Leaflet": {"html": ["leaflet.js", "leaflet.css"]}
+    },
+    "analytics": {
+        "Google Analytics": {"html": ["google-analytics.com", "ga('create'", "gtag("]},
+        "Hotjar": {"html": ["hotjar", "hjSetting"]},
+        "Mixpanel": {"html": ["mixpanel"]},
+        "New Relic": {"html": ["newrelic"]},
+        "Matomo": {"html": ["matomo.js", "piwik.js", "_paq"]},
+        "Segment": {"html": ["segment.com", "analytics.js"]},
+        "Amplitude": {"html": ["amplitude", "cdn.amplitude.com"]},
+        "Clicky": {"html": ["clicky.com", "static.getclicky.com"]}
+    },
+    "cdn": {
+        "Cloudflare": {
+            "headers": {"Server": "cloudflare", "CF-RAY": ""}
+        },
+        "Akamai": {
+            "headers": {"X-Akamai-Transformed": "", "Server": "AkamaiGHost"}
+        },
+        "Fastly": {
+            "headers": {"Fastly-Debug-Path": "", "X-Served-By": "cache-fastly"}
+        },
+        "Amazon CloudFront": {
+            "headers": {"X-Amz-Cf-Id": "", "Via": "CloudFront"}
+        },
+        "jsDelivr": {
+            "html": ["cdn.jsdelivr.net"]
+        },
+        "cdnjs": {
+            "html": ["cdnjs.cloudflare.com"]
+        },
+        "unpkg": {
+            "html": ["unpkg.com"]
+        },
+        "MaxCDN": {
+            "html": ["maxcdn.bootstrapcdn.com"]
+        },
+        "StackPath": {
+            "headers": {"X-SP-Edge": ""}
+        },
+        "KeyCDN": {
+            "headers": {"X-CDN": "KeyCDN"}
+        }
+    }
+} 
