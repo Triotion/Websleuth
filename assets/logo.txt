@@ -6,4 +6,4 @@
  ╚══╝╚══╝ ╚══════╝╚═════╝ ╚══════╝╚══════╝╚══════╝ ╚═════╝    ╚═╝   ╚═╝  ╚═╝
                                                                                 
            Advanced Website OSINT and Penetration Testing Tool
-                    Author: Triotion (https://github.com/Triotion) 
+              Author: Triotion (https://github.com/Triotion) 
