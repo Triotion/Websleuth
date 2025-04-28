@@ -1,7 +1,7 @@
 # WebSleuth - Advanced Website OSINT and Penetration Testing Tool
 
 <p align="center">
-  <img src="assets/logo.png" alt="WebSleuth Logo" width="100%">
+  <img src="assets/logo.txt" alt="WebSleuth Logo" width="100%">
 </p>
 
 <p align="center">

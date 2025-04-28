@@ -13,7 +13,7 @@ setup(
     name="websleuth",
     version="1.0.0",
     author="Triotion",
-    author_email="",  # Add your email if you wish
+    author_email="",  
     description="Advanced Website OSINT and Penetration Testing Tool",
     long_description=long_description,
     long_description_content_type="text/markdown",

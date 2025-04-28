@@ -83,8 +83,8 @@ class SSLChecker:
                     # Get certificate details
                     subject = cert.subject
                     issuer = cert.issuer
-                    not_before = cert.not_valid_before
-                    not_after = cert.not_valid_after
+                    not_before = cert.not_valid_before_utc
+                    not_after = cert.not_valid_after_utc
                     serial_number = cert.serial_number
                     
                     # Parse subject and issuer
@@ -105,8 +105,8 @@ class SSLChecker:
                         "not_after": not_after.strftime("%Y-%m-%d %H:%M:%S"),
                         "serial_number": hex(serial_number),
                         "sans": sans,
-                        "is_expired": datetime.datetime.now() > not_after,
-                        "days_left": (not_after - datetime.datetime.now()).days
+                        "is_expired": datetime.datetime.now(datetime.timezone.utc) > not_after,
+                        "days_left": (not_after - datetime.datetime.now(datetime.timezone.utc)).days
                     }
                     
                     if self.debug:
